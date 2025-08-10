@@ -20,17 +20,20 @@ A modern React application built with Vite, ready for deployment on Netlify.
 ### Getting Started
 
 1. Clone the repository:
+
 ```bash
 git clone <your-repo-url>
 cd my-vite-react-app
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Start the development server:
+
 ```bash
 npm run dev
 ```
@@ -62,6 +65,7 @@ This project is pre-configured for Netlify deployment with `netlify.toml`.
 #### Option 2: Drag and Drop
 
 1. Build the project locally:
+
 ```bash
 npm run build
 ```
@@ -99,6 +103,7 @@ The project uses Vite's default React configuration. You can customize it in `vi
 ### Netlify Configuration
 
 The `netlify.toml` file includes:
+
 - Build command: `npm run build`
 - Publish directory: `dist`
 - Redirects for Single Page Application routing
