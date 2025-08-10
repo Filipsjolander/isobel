@@ -1,34 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import styled from '@emotion/styled'
+
+const AppContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+`
+
+const StyledParagraph = styled.p`
+  font-size: 2rem;
+  color: #646cff;
+  
+  text-align: center;
+  
+  padding: 2rem;
+  border-radius: 100px;
+  border: 1px solid #646cff;
+  
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(2);
+    
+  }
+`
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <AppContainer>
+      <StyledParagraph>
+        isobel.se
+      </StyledParagraph>
+    </AppContainer>
   )
 }
 
